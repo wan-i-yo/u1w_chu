@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+//コンボ数表示
 public class Combo : MonoBehaviour
 {
-    private TextMeshProUGUI _tmpro = default;
+    private TextMeshProUGUI textMeshPro = default;
     [SerializeField] private GameObject gameManagerObj = default;
-    private GameManager _gameManager = default;
+    private GameManager gameManager = default;
 
     void Start()
     {
-        _gameManager = gameManagerObj.GetComponent<GameManager>();
-        _tmpro = GetComponent<TextMeshProUGUI>();
+        gameManager = gameManagerObj.GetComponent<GameManager>();
+        textMeshPro = GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
     {
-        _tmpro.text = _gameManager.Combo.ToString("0");
+        textMeshPro.text = gameManager.Combo.ToString("0");
     }
 }

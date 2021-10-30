@@ -194,14 +194,6 @@ public class GameManager : MonoBehaviour
                 }
 
                 break;
-            case ConstData.GameState.stage2:
-                break;
-            case ConstData.GameState.result2:
-                break;
-            case ConstData.GameState.stage3:
-                break;
-            case ConstData.GameState.result3:
-                break;
             default:
                 break;
         }

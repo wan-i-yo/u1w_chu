@@ -10,14 +10,10 @@ public class NCMBTest : MonoBehaviour
     void Start()
     {
         gameManager = gameManagerObj.GetComponent<GameManager>();
-        // tmr = timerObj.GetComponent<Timer>();
-        // tmrText = tmr.minute.ToString("00") + ":" + ((int) tmr.seconds).ToString ("00");
-        // tmrInt = tmr.minute * 60 + (int) tmr.seconds;
     }
 
     public void OnClick()
     {
-        // var timeScore = new System.TimeSpan (0, 0, tmrInt);
         naichilab.RankingLoader.Instance.SendScoreAndShowRanking (gameManager.Score);
     }
 }
