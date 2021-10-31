@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Debug.unityLogger.logEnabled = false;
+        Debug.unityLogger.logEnabled = true;
         InputArrowKey = 0;
         cameraTrans = mainCamera.GetComponent<Transform>();
         GameState = ConstData.GameState.title;
